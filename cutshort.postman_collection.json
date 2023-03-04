@@ -1,0 +1,313 @@
+{
+	"info": {
+		"_postman_id": "ef0098b2-3d2d-4470-9031-d1b73637179e",
+		"name": "cutshort",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "new post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3R1c2VyQHRlc3QuY29tIiwiaWQiOiI2NDAyMTlmZWYwMDI5NmY2OGQwMGMyMTEiLCJpYXQiOjE2Nzc4Njk4NTMsImV4cCI6MTY3Nzg3MzQ1M30.QmIwnFl4y5Mm7VRCjDtVE97iVIdtXRKqUDFycKR-aTs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"test2\",\r\n    \"content\":\"test post to check api\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/post",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get post ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8081/post/640102c47955c1c5365c85ac",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"post",
+						"640102c47955c1c5365c85ac"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"testuser@test.com\",\r\n    \"password\":\"testPass\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/user/signup",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"user",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"testuser@test.com\",\r\n    \"password\":\"testPass\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/user/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new todo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3R1c2VyQHRlc3QuY29tIiwiaWQiOiI2NDAyMTlmZWYwMDI5NmY2OGQwMGMyMTEiLCJpYXQiOjE2Nzc4NzQwMTksImV4cCI6MTY3Nzg3NzYxOX0.xn7go4BcvjMv5vLUkyvDt6Nf-vpoItCWNGhZ3YhupAA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"desc\":\"todo1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/todo",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "toggle todo",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3R1c2VyQHRlc3QuY29tIiwiaWQiOiI2NDAyMTlmZWYwMDI5NmY2OGQwMGMyMTEiLCJpYXQiOjE2Nzc4NzQwMTksImV4cCI6MTY3Nzg3NzYxOX0.xn7go4BcvjMv5vLUkyvDt6Nf-vpoItCWNGhZ3YhupAA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/todo/toggle/640255796261d1b68d8cfb41",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"todo",
+						"toggle",
+						"640255796261d1b68d8cfb41"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit todo",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3R1c2VyQHRlc3QuY29tIiwiaWQiOiI2NDAyMTlmZWYwMDI5NmY2OGQwMGMyMTEiLCJpYXQiOjE2Nzc5MDM4ODUsImV4cCI6MTY3NzkwNzQ4NX0.bq0DG7EzUav0J0qY7hyNgDAJJJekbLWO1zfwqF1vPNk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"desc\":\"todo2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/todo/640255796261d1b68d8cfb41",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"todo",
+						"640255796261d1b68d8cfb41"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new comment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3R1c2VyQHRlc3QuY29tIiwiaWQiOiI2NDAyMTlmZWYwMDI5NmY2OGQwMGMyMTEiLCJpYXQiOjE2Nzc5MDM4ODUsImV4cCI6MTY3NzkwNzQ4NX0.bq0DG7EzUav0J0qY7hyNgDAJJJekbLWO1zfwqF1vPNk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"postid\":\"6402438744f797f7d2021fc3\",\r\n    \"comment\":\"nice post\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/comment",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"comment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get comment",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3R1c2VyQHRlc3QuY29tIiwiaWQiOiI2NDAyMTlmZWYwMDI5NmY2OGQwMGMyMTEiLCJpYXQiOjE2Nzc5MDM4ODUsImV4cCI6MTY3NzkwNzQ4NX0.bq0DG7EzUav0J0qY7hyNgDAJJJekbLWO1zfwqF1vPNk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8081/comment/6402ce9c48427a72ac0292e9",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"comment",
+						"6402ce9c48427a72ac0292e9"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
